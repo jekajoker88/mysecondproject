@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Proxima Nova Regular';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Our style*/
+
+.wrapper{
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.center{
+	max-width: 1140px;
+	width: 90%;
+	margin: 0 auto;
+}
+header .top_header{
+	background-color: #2d3e50;
+	height: 60px;
+}
+header .flex_header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+}
+header .flex_header a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #ffffff;
+}
+header .flex_header a:hover{
+	color: #ffc000;
+}
+header .flex_header i{
+	color: #ffc000;
+	margin-right: 15px;
+	font-size: 20px;
+	position: relative;
+	top: 4px;
+}
+header .bottom_header{
+	height: 90px;
+	display: flex;
+	align-items: center;
+
+}
+header .bottom_header a{
+	font-family: 'Proxima Nova Bold';
+	text-decoration: none;
+	font-size: 21px;
+	display: flex;
+	align-items: center;
+	color: #252c30;
+	
+}
+header .bottom_header span{
+	color: #ffc000;
+}
+header .bottom_header .menu{
+	display: flex;
+}
+header .bottom_header .menu li a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #252c30;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0 30px;
+}
+header .bottom_header .menu li a:hover{
+	color: #ffc000;
+}
+header .bottom_header .search i{
+	font-size: 22px;
+	color: #252c30;
+}
+header .bottom_header .search i:hover{
+	color: #ffc000;
+	cursor: pointer;
+
+}
+header .bottom_header nav{
+	margin-left: 15%;
+}
+.container2{
+	background-image: url('./repace.png');
+	height: calc(100vh - 150px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-height: 805px;
+}
+.container2 h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 72px;
+	position: relative;
+	top: 170px;
+	font-family: 'Proxima Nova Bold';
+}
+.container2 h1 span{
+	color: #ffc000;
+}
+
+.container2 p{
+	color: #ffffff;
+	text-align: center;
+	position: relative;
+	top: 200px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container2 .buttons {
+	clear: both;
+	text-align: center;
+	margin-top: 30vh;
+}
+
+.container2 .buttons a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	width: 200px;
+	font-size: 18px;
+	font-family: 'Proxima Nova Bold';
+	padding: 20px 50px 20px 50px;
+	background-color: #ffc000;
+	border-radius: 40px;
+}
+
+.container3 .cards{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.container3 .cards .item:first-child{
+	background-color: white;
+	border: 2px solid #ffc000;
+}
+.container3 .cards .item{
+	height: 380px;
+	width: 23%;
+	background-color: #2d3e50;
+}
+.container3 .cards .circle{
+	width: 80px;
+    height: 80px;
+    border-radius: 40px;
+	background: #ffffff;
+	margin-left: 34%;
+	margin-top: 20%;
+}
+.container3 .cards .circle1{
+	background-color: #ffc000;
+	
+}
+.container3 .cards .circle .brush{
+	position: relative;
+    top: 24%;
+    left: 24%;
+}
+.container3 .cards .circle .brushwall{
+	position: relative;
+    top: 26%;
+	left: 26%;
+}
+.container3 .cards .circle .gear{
+	position: relative;
+    top: 19%;
+    height: 50px;
+    left: 19%;
+}
+.container3 .cards .circle .helmet{
+	left: 18%;
+    position: relative;
+    top: 20%;
+}
+
+.container3 p{
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+.container3 .p{
+	color: #000000;
+}
+
+.container3 .text_p{
+	padding-top: 30px;
+}
+.container3 h2{
+	color: black;
+	font-family: 'Proxima Nova Bold';
+	font-size: 36px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.container3 h2 span{
+	color: #ffc000;
+}
+.container3 .cards .item h4{
+	font-family: 'Proxima Nova Bold';
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 10%;
+}
+.container3 .cards .item .h4{
+	color: black;
+}
+
+.container4 {
+	height: 245px;
+	width: 100%;
+	
+	background-image: url('./images/replace\ image1.png');
+	margin-top: 8%;
+	
+}
+
+.container4 .s4{
+	max-width: 1140px;
+	width: 90%;
+	margin: 0 auto;
+}
+.container4 .s4 .info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.container4 .s4 .info .s1{
+	font-family: 'Proxima Nova Bold';
+	color: #ffffff;
+	font-size: 26px;
+	margin-top: 60px;
+	align-items: baseline;
+}
+.container4 .s4 .info .c2{
+	font-size: 46px;
+	margin-top: 40px;
+	font-family: 'Proxima Nova Bold';
+	color: #ffffff;
+	align-items: baseline;
+	margin-left: 15%;
+	
+}
